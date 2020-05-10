@@ -1,0 +1,182 @@
+header {
+    // border: 1px solid red;
+    // 上方連結
+    .topStatus {
+        // border: 1px solid green;
+        margin: 40px auto;
+        width: 1640px;
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        ul {
+            // border: 1px solid blue;
+            float: right;
+            font-size: 0;
+            li {
+                display: inline-block;
+                // font-size: 0;
+                &::after {
+                    content: "|";
+                    margin: 0 10px;
+                    font-size: 18px;
+                    color: #8b8b8b;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: #8b8b8b;
+                }
+            }
+            li:last-child:after {
+                content: "";
+                margin: 0;
+            }
+        }
+    }
+
+    // 中間
+    .midStatus {
+        width: 1640px;
+        margin: 0 auto;
+        font-size: 0;
+        .logo {
+            display: inline-block;
+            font-size: 0;
+            a {
+                img {
+                    width: 350.3px;
+                    height: 55px;
+                }
+            }
+        }
+
+        .logoSerch {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 0;
+            float: right;
+
+            .SerchSpace {
+                display: inline-block;
+                font-size: 0;
+                label {
+                    display: inline-block;
+                    vertical-align: top;
+                    background-color: #a9d0e0;
+                    border-radius: 20px 0 0 20px;
+                    width: 145px;
+                    height: 55px;
+                    font-size: 22px;
+                    .text {
+                        display: block;
+                        text-align: center;
+                        margin: 0 auto;
+                        line-height: 55px;
+                        font-size: 22px;
+                        color: #ffffff;
+                    }
+                }
+                input {
+                    border: 2px solid #a9d0e0;
+                    vertical-align: top;
+                    outline: none;
+                    width: 436px;
+                    height: 55px;
+                    font-size: 20px;
+                    padding: 0 17px;
+                }
+                button {
+                    display: inline-block;
+                    outline: none;
+                    border: 2px solid #a9d0e0;
+                    border-radius: 0 20px 20px 0;
+                    width: 82px;
+                    height: 55px;
+                    position: relative;
+                    cursor: pointer;
+                    &::before {
+                        content: "";
+                        background-image: url("../img/icon/magnifier.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        left: 50%;
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+            .cart {
+                display: inline-block;
+                vertical-align: bottom;
+                margin-left: 42px;
+                font-size: 0;
+                span {
+                    position: relative;
+                    display: inline-block;
+                    right: -8px;
+                    font-size: 18px;
+                    color: #8b8b8b;
+                }
+                img {
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    // 下面
+    .navBar {
+        width: 1637px;
+        margin: 58.5px auto 37.5px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0;
+            li {
+                height: 50px;
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                &::after {
+                    content: "";
+                    background-image: url("../img/icon/line.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    right: -88%;
+                    height: 50px;
+                    width: 3px;
+                }
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    line-height: 50px;
+
+                    img {
+                        width: 37px;
+                        vertical-align: middle;
+                    }
+                    span {
+                        margin-left: 16.5px;
+                        vertical-align: middle;
+                        font-size: 22px;
+                        color: #8b8b8b;
+                    }
+                }
+            }
+            // 最後一個關掉
+            li:last-child:after {
+                content: "";
+                background-image: none;
+            }
+        }
+    }
+}

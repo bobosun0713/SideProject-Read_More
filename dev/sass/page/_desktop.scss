@@ -1,0 +1,144 @@
+.read_moreContent {
+    // border: 1px solid red;
+    width: 1640px;
+    margin: 0 auto;
+    // position: relative;
+
+    .read_section_1 {
+        border: 1px solid red;
+        position: relative;
+
+        // 標題========
+        .read_title {
+            // border: 1px solid blue;
+            position: relative;
+            margin: 210px 0 45px;
+            width: 240px;
+            height: 55px;
+            background-color: #a9d0e0;
+
+            h1 {
+                text-align: center;
+                line-height: 55px;
+                font-size: 22px;
+                color: #ffffff;
+            }
+
+            .read_backColor {
+                position: absolute;
+                bottom: 10px;
+                left: 37px;
+                z-index: -1;
+                width: 230px;
+                height: 65px;
+                background-color: #eff9fd;
+            }
+        }
+
+        // 內容========
+        .read_channel {
+            // border: 1px solid blue;
+            height: 500px;
+            width: 1550px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+
+            // 輪播卡片
+            .read_cardSpac {
+                // border: 1px solid black;
+                position: absolute;
+                left: 0;
+                width: 7750px;
+                display: flex;
+                font-size: 0;
+                transition: all 2s;
+
+                .readerCard {
+                    // border: 1px solid green;
+                    display: inline-block;
+                    margin: 0 12px;
+
+                    .cardImg {
+                        font-size: 0;
+                        img {
+                            // border: 1px solid red;
+                            width: 285px;
+                            height: 330px;
+                            object-fit: cover;
+                        }
+                    }
+                    .cardContent {
+                        text-align: center;
+                        width: 285px;
+                        h1 {
+                            // border: 1px solid red;
+                            margin-bottom: 35px;
+                            font-size: 25px;
+                            color: #444444;
+                        }
+                        .card_AP {
+                            p {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #9d9d9d;
+
+                                .price_1 {
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    color: red;
+                                }
+                                .price_2 {
+                                    font-weight: bold;
+                                    font-size: 22px;
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 輪播控制鈕
+        .read_LeftBtn {
+            position: absolute;
+            bottom: 40%;
+            .Left_btn {
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                outline: none;
+            }
+        }
+
+        .read_RighitBtn {
+            position: absolute;
+            bottom: 40%;
+            right: 0;
+            outline: none;
+
+            .Righit_btn {
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                outline: none;
+            }
+        }
+        // 點點控制鈕
+        .p_space {
+            // border: 1px solid red;
+            position: absolute;
+            top: 2%;
+            right: 6%;
+            font-size: 0;
+            li {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: #d1eaf4;
+                margin: 8px;
+            }
+        }
+    }
+}

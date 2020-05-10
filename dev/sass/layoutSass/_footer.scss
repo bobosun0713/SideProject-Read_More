@@ -1,0 +1,130 @@
+footer {
+    background-color: #9acadd;
+
+    // 上面
+    .footerContent {
+        width: 1640px;
+        margin: 0 auto;
+
+        nav {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 0;
+            ul {
+                display: inline-block;
+                vertical-align: top;
+                width: 300px;
+                font-size: 0;
+                .footer_topStatus {
+                    padding: 70px 0 45px;
+                    a {
+                        padding: 0;
+                    }
+                }
+                li {
+                    list-style: none;
+                    font-size: 0;
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 22px;
+                        color: #ffffff;
+                        padding: 20px 0;
+                    }
+                }
+            }
+        }
+        .footerDetails {
+            display: inline-block;
+            vertical-align: top;
+            float: right;
+
+            .footerLogo {
+                padding: 70px 0 25px;
+                font-size: 0;
+                img {
+                    object-fit: contain;
+                    width: 305px;
+                    height: 50px;
+                }
+            }
+            ul {
+                font-size: 0;
+                li {
+                    list-style: none;
+                    margin: 10px 0 10px;
+                    span {
+                        margin-right: 25px;
+                        img {
+                            vertical-align: middle;
+                            width: 30px;
+                            height: 40px;
+                        }
+                    }
+                    p {
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 250px;
+                        letter-spacing: px;
+                        font-size: 22px;
+                        color: #ffffff;
+                    }
+                }
+                // Icon
+                .footerIcon {
+                    padding: 25px 0;
+                    span a img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    // 中間
+    .footerBottom {
+        width: 1640px;
+        padding: 105px 0 0;
+        text-align: center;
+        margin: 0 auto;
+        ul {
+            border-top: 1px solid #ffffff;
+            padding: 35px 0;
+            font-size: 0;
+            li {
+                display: inline-block;
+                margin-right: 60px;
+                list-style: none;
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                p {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 22px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    // 下面
+    .footerEnd {
+        width: 1640px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 45px;
+        p {
+            letter-spacing: 1px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+    }
+}
