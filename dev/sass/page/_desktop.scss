@@ -1,143 +1,346 @@
-.read_moreContent {
-    // border: 1px solid red;
-    width: 1640px;
-    margin: 0 auto;
-    // position: relative;
+.wrap {
+    box-sizing: border-box;
+    .read_moreContent_section_1 {
+        width: 1640px;
+        margin: 0 auto;
 
-    .read_section_1 {
-        border: 1px solid red;
-        position: relative;
-
-        // 標題========
-        .read_title {
-            // border: 1px solid blue;
-            position: relative;
-            margin: 210px 0 45px;
-            width: 240px;
-            height: 55px;
-            background-color: #a9d0e0;
-
-            h1 {
-                text-align: center;
-                line-height: 55px;
-                font-size: 22px;
-                color: #ffffff;
-            }
-
-            .read_backColor {
-                position: absolute;
-                bottom: 10px;
-                left: 37px;
-                z-index: -1;
-                width: 230px;
-                height: 65px;
-                background-color: #eff9fd;
-            }
-        }
-
-        // 內容========
-        .read_channel {
-            // border: 1px solid blue;
-            height: 500px;
-            width: 1550px;
-            margin: 0 auto;
-            overflow: hidden;
+        .read_section_1 {
+            border: 1px solid red;
             position: relative;
 
-            // 輪播卡片
-            .read_cardSpac {
-                // border: 1px solid black;
-                position: absolute;
-                left: 0;
-                width: 7750px;
-                display: flex;
-                font-size: 0;
-                transition: all 2s;
+            // 標題========
+            .read_title {
+                // border: 1px solid blue;
+                position: relative;
+                margin: 210px 0 45px;
+                width: 240px;
+                height: 55px;
+                background-color: #a9d0e0;
 
-                .readerCard {
-                    // border: 1px solid green;
-                    display: inline-block;
-                    margin: 0 12px;
+                h1 {
+                    text-align: center;
+                    line-height: 55px;
+                    font-size: 22px;
+                    color: #ffffff;
+                }
 
-                    .cardImg {
-                        font-size: 0;
-                        img {
-                            // border: 1px solid red;
+                .read_backColor {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 37px;
+                    z-index: -1;
+                    width: 230px;
+                    height: 65px;
+                    background-color: #eff9fd;
+                }
+            }
+
+            // 內容========
+            .read_channel {
+                // border: 1px solid blue;
+                height: 500px;
+                width: 1550px;
+                margin: 0 auto;
+                overflow: hidden;
+                position: relative;
+
+                // 輪播卡片
+                .read_cardSpac {
+                    // border: 1px solid black;
+                    position: absolute;
+                    left: 0;
+                    width: 7750px;
+                    display: flex;
+                    font-size: 0;
+                    transition: all 2s;
+
+                    .readerCard {
+                        // border: 1px solid green;
+                        display: inline-block;
+                        margin: 0 12px;
+
+                        .cardImg {
+                            font-size: 0;
+                            img {
+                                // border: 1px solid red;
+                                width: 285px;
+                                height: 330px;
+                                object-fit: cover;
+                            }
+                        }
+                        .cardContent {
+                            text-align: center;
                             width: 285px;
-                            height: 330px;
-                            object-fit: cover;
-                        }
-                    }
-                    .cardContent {
-                        text-align: center;
-                        width: 285px;
-                        h1 {
-                            // border: 1px solid red;
-                            margin-bottom: 35px;
-                            font-size: 25px;
-                            color: #444444;
-                        }
-                        .card_AP {
-                            p {
-                                font-size: 18px;
-                                font-weight: 500;
-                                color: #9d9d9d;
+                            h1 {
+                                // border: 1px solid red;
+                                margin-bottom: 35px;
+                                font-size: 25px;
+                                color: #444444;
+                            }
+                            .card_AP {
+                                p {
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    color: #9d9d9d;
 
-                                .price_1 {
-                                    font-weight: bold;
-                                    font-size: 16px;
-                                    color: red;
-                                }
-                                .price_2 {
-                                    font-weight: bold;
-                                    font-size: 22px;
-                                    color: red;
+                                    .price_1 {
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        color: red;
+                                    }
+                                    .price_2 {
+                                        font-weight: bold;
+                                        font-size: 22px;
+                                        color: red;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-        }
-        // 輪播控制鈕
-        .read_LeftBtn {
-            position: absolute;
-            bottom: 40%;
-            .Left_btn {
-                border-radius: 100%;
-                width: 40px;
-                height: 40px;
+            // 輪播控制鈕
+            .read_LeftBtn {
+                position: absolute;
+                bottom: 40%;
+                .Left_btn {
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    outline: none;
+                }
+            }
+
+            .read_RighitBtn {
+                position: absolute;
+                bottom: 40%;
+                right: 0;
                 outline: none;
+
+                .Righit_btn {
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    outline: none;
+                }
+            }
+            // 點點控制鈕
+            .p_space {
+                // border: 1px solid red;
+                position: absolute;
+                top: 2%;
+                right: 6%;
+                font-size: 0;
+                li {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: #d1eaf4;
+                    margin: 8px;
+                }
             }
         }
+    }
+    .read_moreContent_section_2 {
+        // border: 1px solid blue;
+        margin: 150px 0;
+        background-color: #eaf4f8;
+        height: 650px;
 
-        .read_RighitBtn {
-            position: absolute;
-            bottom: 40%;
-            right: 0;
-            outline: none;
-
-            .Righit_btn {
-                border-radius: 100%;
-                width: 40px;
-                height: 40px;
-                outline: none;
-            }
-        }
-        // 點點控制鈕
-        .p_space {
+        .read_section_2 {
             // border: 1px solid red;
-            position: absolute;
-            top: 2%;
-            right: 6%;
+            width: 1640px;
+            margin: 0 auto;
             font-size: 0;
-            li {
+
+            .read_section_2_new {
+                // border: 1px solid red;
                 display: inline-block;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: #d1eaf4;
-                margin: 8px;
+                vertical-align: top;
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 117px 60px 0 60px;
+                width: 1000px;
+                height: 650px;
+
+                .section_2_new {
+                    // border: 1px solid red;
+                    position: relative;
+                    margin-bottom: 40px;
+                    font-size: 0;
+
+                    // 標題
+                    .newSpace {
+                        position: relative;
+                        display: inline-block;
+                        margin-left: 40px;
+
+                        img {
+                            position: absolute;
+                            width: 70px;
+                            height: 60px;
+                            top: -60%;
+                            left: -25%;
+                        }
+                        p {
+                            color: #82c3dd;
+                            font-size: 42px;
+                        }
+                    }
+
+                    // more按鈕
+                    .section_2_btn {
+                        display: inline-block;
+                        vertical-align: bottom;
+                        position: absolute;
+                        right: 0;
+                        bottom: 10%;
+                        cursor: pointer;
+                        border: 1.5px solid #82c3dd;
+                        border-radius: 5px;
+                        width: 80px;
+                        height: 30px;
+                        color: #82c3dd;
+                        text-align: center;
+                        font-size: 18px;
+                        span {
+                            display: inline-block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 5px 0 5px 10px;
+                            border-color: transparent transparent transparent #82c3dd;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                // 序列選單
+                ul {
+                    border-bottom: 1px dashed #82c3dd;
+                    li {
+                        list-style-position: inside;
+                        border-top: 1px dashed #82c3dd;
+                        padding: 20px 20px;
+                        font-size: 22px;
+                        color: #707070;
+                    }
+                }
+            }
+
+            .read_section_2_tab {
+                display: inline-block;
+                width: 640px;
+                height: 650px;
+
+                .tab_1 {
+                    font-size: 0;
+                    .tab01 {
+                        // border: 1px solid red;
+                        display: inline-block;
+                        position: relative;
+                        width: 320px;
+                        height: 325px;
+
+                        .tab01_space {
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                            margin: 0 auto;
+                            width: 150px;
+                            img {
+                                width: 100%;
+                                height: 150px;
+                            }
+                            p {
+                                margin: 25px 0;
+                                text-align: center;
+                                font-size: 22px;
+                                color: #82c3dd;
+                            }
+                        }
+                    }
+                    .tab02 {
+                        display: inline-block;
+                        position: relative;
+                        width: 320px;
+                        height: 325px;
+
+                        .tab02_space {
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                            margin: 0 auto;
+                            width: 150px;
+                            img {
+                                width: 100%;
+                                height: 150px;
+                            }
+                            p {
+                                margin: 25px 0;
+                                text-align: center;
+                                font-size: 22px;
+                                color: #82c3dd;
+                            }
+                        }
+                    }
+                }
+
+                .tab_2 {
+                    font-size: 0;
+                    .tab03 {
+                        display: inline-block;
+                        position: relative;
+                        width: 320px;
+                        height: 325px;
+
+                        .tab01_space {
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                            margin: 0 auto;
+                            width: 150px;
+                            img {
+                                width: 100%;
+                                height: 150px;
+                            }
+                            p {
+                                margin: 25px 0;
+                                text-align: center;
+                                font-size: 22px;
+                                color: #82c3dd;
+                            }
+                        }
+                    }
+                    .tab04 {
+                        display: inline-block;
+                        position: relative;
+                        width: 320px;
+                        height: 325px;
+
+                        .tab02_space {
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            left: 50%;
+                            margin: 0 auto;
+                            width: 150px;
+                            img {
+                                width: 100%;
+                                height: 150px;
+                            }
+                            p {
+                                margin: 25px 0;
+                                text-align: center;
+                                font-size: 22px;
+                                color: #82c3dd;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
